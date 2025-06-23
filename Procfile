@@ -1,1 +1,1 @@
-Start: python ava_raid_bot.py
+worker: python ava_raid_bot.py
