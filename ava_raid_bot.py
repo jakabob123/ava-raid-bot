@@ -1,3 +1,4 @@
+import os
 import discord
 from discord.ext import commands
 from discord import app_commands
@@ -128,7 +129,5 @@ async def on_raw_reaction_add(payload):
     # Hapus reaksi user agar bisa klik ulang
     await message.remove_reaction(payload.emoji, payload.member)
 
-
 bot.tree.add_command(AvaRaid(bot).ava)
-import os
 bot.run(os.getenv("DISCORD_TOKEN"))
