@@ -129,5 +129,6 @@ async def on_raw_reaction_add(payload):
     await message.remove_reaction(payload.emoji, payload.member)
 
 
-bot.tree.add_command(AvaRaid(bot).ava)
-bot.run("PASTE_TOKEN_DISINI")
+import os
+bot.run(os.getenv("DISCORD_TOKEN"))
+
