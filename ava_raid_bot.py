@@ -130,4 +130,4 @@ async def on_raw_reaction_add(payload):
 
 
 bot.tree.add_command(AvaRaid(bot).ava)
-bot.run("MTM4NjU3NTU4NTU1OTU3NjY5Nw.G56kS1.aT0OssAGfI_Fq_khRD_nPLws1OyR4nSK5zzHpQ")
+bot.run("DISCORD_TOKEN")
